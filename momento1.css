@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     height: 100%;
     margin: 0;
+    background: linear-gradient(to right, #f3e6ff, #e6eaff);
 }
 
 .nav1{
@@ -37,6 +38,10 @@ body {
     flex: 1;
 }
 
+.bg-purple-transparent {
+    background-color: rgba(230, 190, 255, 0.7);
+}
+
 footer {
     background-color: #414345;
     color: #fff;
@@ -68,6 +73,19 @@ a {
     font-weight: bolder;
 }
 
-a:hover {
-    background-color: #2910ea;
+div nav div a {
+    display: inline;
+    padding: 0;
+    background: none; 
+    color: black; 
+    background-clip: text; 
+    -webkit-background-clip: text; 
 }
+
+div nav div a:hover {
+    background: linear-gradient(to right, #f3e6ff, #e6eaff); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
